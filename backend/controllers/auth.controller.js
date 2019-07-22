@@ -13,13 +13,13 @@ exports.login=(req,res,next)=>{
   const [header,payload,signature] = createToken(user)
   //cookie que tiene header y payload (para la seguridad de medium)
   res.cookie('headload', `${header}.${payload}.`,{
-    // expires:1000*60*30,
-    // secure:true
+    expires:1000*60*30,
+    secure:true
   })
   //segundo cookie
   res.cookie('signature',signature,{
-    // httpOly:true,
-    // secure:true
+    httpOly:true,
+    secure:true
   })
   // aqui ya estamos logueados
   res.status(200).json({user})

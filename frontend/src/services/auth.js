@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseURL = 'https://intense-cove-72070.herokuapp.com/'
+const baseURL = 'https://sheltered-hollows-46246.herokuapp.com'
 
 class AuthService{
 
