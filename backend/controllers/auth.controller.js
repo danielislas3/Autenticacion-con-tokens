@@ -13,7 +13,7 @@ exports.login=(req,res,next)=>{
   const [header,payload,signature] = createToken(user)
   //cookie que tiene header y payload (para la seguridad de medium)
   res.cookie('headload', `${header}.${payload}.`,{
-    expires:1000*60*30,
+    maxAge:1000*60*30,
     secure:true
   })
   //segundo cookie

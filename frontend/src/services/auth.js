@@ -13,7 +13,7 @@ class AuthService{
       return this.service.post('/signup',data)
     }
     login(data){
-      return this.service.post('/login',data)
+      return this.service.post('/login', data)
     }
     logout(){
       return this.service.get('/logout')

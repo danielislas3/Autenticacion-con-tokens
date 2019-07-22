@@ -27,7 +27,7 @@ const app = express();
 
 app.use(cors({
   credentials:true,
-  origin:'https://epic-poincare-55aa7d.netlify.com'
+  origin:['https://epic-poincare-55aa7d.netlify.com', 'http://localhost:3000', 'http://localhost:3001']
 })
 )
 app.use(passport.initialize())

@@ -13,12 +13,13 @@ function Login(props) {
   },[props.history])
 
   const handleLogin = () => {
+    console.log(form)
     authService
       .login(form)
       .then(response => {
         // aqui debería de ir una notificación o un SWAL o un TOASTR
         console.log(response)
-        localStorage.setItem('loggedUser',JSON.stringify(response.data.user))
+        localStorage.setItem('loggedUser', JSON.stringify(response.data.user))
       })
       .catch(err => {
         // aqui debería de ir una notificación o un SWAL o un TOASTR
