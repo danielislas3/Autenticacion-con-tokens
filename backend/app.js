@@ -27,7 +27,7 @@ const app = express();
 
 app.use(cors({
   credentials:true,
-  origin:['https://sheltered-hollows-46246.herokuapp.com/','http://localhost:3001']
+  origin:'https://epic-poincare-55aa7d.netlify.com'
 })
 )
 app.use(passport.initialize())
