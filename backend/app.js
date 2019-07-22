@@ -27,7 +27,7 @@ const app = express();
 
 app.use(cors({
   credentials:true,
-  origin:['http://localhost:3001']
+  origin:['https://intense-cove-72070.herokuapp.com/','http://localhost:3001']
 })
 )
 app.use(passport.initialize())
